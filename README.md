@@ -28,11 +28,14 @@ Calculates RubinRatios for Twitter users as originally proposed by Eric Weinstei
 
 ```
 node rubinratio.js [options]
-  -f  input file of handles
-  -h comma-separated list of handles
+  -f      input file of handles
+  -l      comma-separated list of handles
+  -o=csv  output results in csv format
+  -u      calculate RubinRatio for all followers of this screen name
 
 EXAMPLES
   node rubinratio.js -h ericrweinstein,kanyewest
+  node rubinratio.js -u rubinreport -o csv
 ```
 
 ## License
