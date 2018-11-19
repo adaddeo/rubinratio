@@ -38,7 +38,7 @@ const calc = handle =>
 const analyze = (screen_names, cb) =>
   Promise.all(screen_names.map(calc))
     .then(cb)
-    .catch(error => console.error(error))
+    .catch(console.error)
 
 const printTable = results =>
   console.table(results
@@ -83,5 +83,5 @@ if (argv.l) {
     }
   })
 } else {
-  console.log('Usage: node rubinratio.js [options]\n  -f      input file of screen names\n  -l      comma-separated list of screen names\n  -o=csv  output results in csv format\n  -u      calculate RubinRatio for all followers of this screen name\n\nEXAMPLES\n  node rubinratio.js -h ericrweinstein,kanyewest\n  node rubinratio.js -u rubinreport -o csv')
+  console.log('Usage: node rubinratio.js [options]\n  -f      input file of screen names\n  -l      comma-separated list of screen names\n  -o=csv  output results in csv format\n  -u      calculate RubinRatio for all followers of this screen name\n\nEXAMPLES\n  node rubinratio.js -l ericrweinstein,kanyewest\n  node rubinratio.js -u rubinreport -o csv')
 }

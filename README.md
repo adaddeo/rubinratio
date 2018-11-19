@@ -34,7 +34,7 @@ node rubinratio.js [options]
   -u      calculate RubinRatio for all followers of this screen name
 
 EXAMPLES
-  node rubinratio.js -h ericrweinstein,kanyewest
+  node rubinratio.js -l ericrweinstein,kanyewest
   node rubinratio.js -u rubinreport -o csv
 ```
 
